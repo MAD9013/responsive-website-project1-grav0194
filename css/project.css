@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-/* You must use a DIFFERENT FONT THAT THIS ONE as your webfont */
 
 /*************************************************
             DEFAULTS
@@ -14,115 +13,345 @@
     box-sizing: inherit;
 }
 html{
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-size: 16px;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    /* change this font stack to your own choices */
-    line-height: 1.5;
 }
 p{
-    
+    font-weight: inherit;
+    line-height: 1.5;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 1em;
 }
 a{
-    
-}
-ul{
-    
-}
-ol{
-    
-}
-li{
-    
+    font-weight: 400;
+    line-height: inherit;
+    font-size:  1.5em;
+    text-align: center;
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 img{
-    width: 25%;
+    max-width: 50%;
+    float: left;
+    margin: 0rem 1rem 0rem 0rem;
+    border:0.5rem solid;
 }
-
+section > h1{
+    padding: 1rem;
+}
+section > h2{
+    padding: 1rem;
+}
 /*************************************************
             HEADER
 *************************************************/
 header{
-    padding:1rem 2rem;
-    color: black;
+    padding:1rem;
+    margin: 1rem 0rem 0rem 0rem;
+    background-image: url("../img/image-header-1920-1080.jpg");
+    background-position: bottom; 
+    height: 20rem;
 }
 header > h1{
-    
+    color: #A9A9A9;
+    font-size: 5rem;
 }
 header > h2{
-    
+    color: #A9A9A9; 
+    font-size: 4rem;
 }
 /*************************************************
             NAVMENU
 *************************************************/
 nav{
-    padding:1rem 2rem;
+    padding:1rem;  
+    background-color: #E8E8E8;
 }
-nav > a,
-nav > a:visited,
-nav > a:link{
-    
-}
-nav > a:active,
-nav > a:focus,
-nav > a:hover{
-    
-}
-
 /*************************************************
             MAIN CONTENT
 *************************************************/
-main{
-    padding:1rem 2rem;
-}
 section{
-    
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 0.5rem;
 }
 section p{
-    
+    padding: 1rem;
 }
-section p img{
-    
+section > h1 {
+    font-size: 3rem;
 }
-
+section > h2{
+    font-size: 2rem;
+}
+p{
+    color: #000000;
+    float: right;
+}
+.mainnav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.mainnav > a {
+    color: #000000;
+    }
+}
 /*************************************************
             FOOTER
 *************************************************/
 footer{
-    padding:1rem 2rem;
+    
 }
 .foot nav{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 .foot section{
-    
+    background-color: #E8E8E8;
+    display: inherit;
 }
-.foot dl{
-    
-}
-.foot dt{
-    
+.foot dt{ 
+    font-size: 2em;
+    padding: 0rem 0rem 0.5rem 0rem; 
 }
 .foot dd{
-    
+    font-size: 1em;
+    padding: 0rem 0rem 0.5rem 0rem;
 }
-.foot dd a,
-.foot dd a:visited{
-    
+form{
+    width: 100%;
 }
-.foot dd a:active,
-.foot dd a:focus,
-.foot dd a:hover{
-    
+.comments div{
+    padding: 1rem;
+    display: flex;
+}
+.foot > section  {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+.form-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+.form-box > input{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between ;
+    flex: 1 1 50%;
+    padding: 0.5rem; 
+}
+.form-box > text{
+    margin: 0rem 1rem 0rem 0rem;
+}
+.form-box > select{
+    display: flex;
+    flex-grow: 1;
+    padding: 0.5rem;
+}
+.form-box > textarea{
+    flex-grow: 1;
+    padding: 0.5rem;
+    min-height: 10rem;
+}
+.form-box > button{
+    font-size: 1rem;
+    padding: 0.5rem;
 }
 /*************************************************
             MEDIA QUERIES for layout
 *************************************************/
 @media (max-width: 599px){
-    
+    header > h1{ 
+    color: #99ff99;
+    }
+    body{
+        background-color: #99ff99;
+    }
+    .mainnav{ 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        align-items: center;
+    }
+    main{            
+        padding: 0rem 0rem 1rem 0rem;
+    }
+    section{
+        color: #99ff99;
+    }
+    img{
+        max-width: 100%;
+        float: left;
+        margin: 0rem 1rem 0rem 0rem;
+        border: 0.5rem solid #99ff99;
+    }
+    .mainnav a{
+        padding: 0.25rem;
+    }
+    .form-box > input{
+    flex: 1 1 100%;
+    }
+    nav > a, color: #ffffff;
+    nav > a:visited,
+    nav > a:link{
+        color: black;
+    }
+    nav > a:active, 
+    nav > a:focus,
+    nav > a:hover{
+        color: #99ff99;
+    }
+    .foot dd a,
+    .foot dd a:visited{
+        color: #000000;
+    }
+    .foot dd a:active,
+    .foot dd a:focus,
+    .foot dd a:hover{
+        color: #99ff99;
+    }    
 }
-@media (min-width: 600px) and (max-width:999px){
-    
+/***************** MEDIA *****************/
+@media (min-width: 600px) and (max-width:999px){ /*blue*/
+    header > h1{ 
+        color: #99ebff;
+    }
+    body{
+        background-color: #99ebff;
+        box-sizing: border-box;
+    }
+    section{
+        color: #99ebff;
+    }
+    main{            
+        padding: 0rem 0rem 1rem 0rem;
+    }
+    img{
+        max-width: 50%;
+        float: left;
+        margin: 0rem 1rem 0rem 0rem;
+        border:0.5rem solid #99ebff;
+    }
+    .primary{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .primary > section{
+       flex: 1 0 50%;        
+    }
+    .primary > section:first-child{
+        flex: 0 1 100%;
+    }
+    nav > a, color: #ffffff; 
+    nav > a:visited,
+    nav > a:link{
+        color: black;
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: #99ebff;
+    }
+    .foot dd a,
+    .foot dd a:visited{
+        color: #000000;
+    }
+    .foot dd a:active,
+    .foot dd a:focus,
+    .foot dd a:hover{
+        color: #99ebff;
+    }
 }
-@media (min-width: 1000px){
-    
+/***************** MEDIA *****************/
+@media (min-width:  1000px){ 
+    header > h1{ 
+        color: #ffc299;
+    }
+    body{
+        background-color: #ffc299;
+    }
+    main{
+        width: auto;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        color: #ffc299;
+    }
+    section > h1 {
+        font-size: 2rem;
+    }
+    p{
+        color: #000000;
+    }
+    img{
+        max-width: 65%;
+        float: left;
+        margin: 0rem 1rem 0rem 0rem;
+        border:0.5rem solid #ffc299;
+    }
+    .primary{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .primary > section{
+       flex: 1 0 30%;
+    }
+    .primary > section:first-child{
+        flex: 0 1 30%;
+    }
+    footer{
+        padding: 1rem 0rem 0rem 0rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .foot nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 50%;
+        order: -1;
+    }
+    nav > a, color: #ffffff; 
+    nav > a:visited,
+    nav > a:link{
+        color: black;
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: #ffc299;
+    }
+    .foot dd a,
+    .foot dd a:visited{
+        color: #000000;
+    }    
+    .foot dd a:active,
+    .foot dd a:focus,
+    .foot dd a:hover{
+        color: #ffc299;
+    }
 }
