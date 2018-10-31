@@ -59,10 +59,12 @@ header{
 header > h1{
     color: #A9A9A9;
     font-size: 5rem;
+    padding: 0.5rem;
 }
 header > h2{
     color: #A9A9A9; 
     font-size: 4rem;
+    padding: 0.5rem;
 }
 /*************************************************
             NAVMENU
